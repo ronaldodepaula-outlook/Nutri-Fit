@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <style>
+    .box { fill:#ffffff; stroke:#2b6cb0; stroke-width:2; rx:10; }
+    .title { font: bold 14px sans-serif; fill:#0b3b66; }
+    .label { font: 12px sans-serif; fill:#0b3b66; }
+    .arrow { stroke:#0b3b66; stroke-width:2; fill:none; marker-end:url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0b3b66" />
+    </marker>
+  </defs>
+
+  <!-- Boxes -->
+  <rect x="40" y="40" width="200" height="80" class="box"/>
+  <text x="140" y="70" text-anchor="middle" class="title">Home</text>
+  <text x="140" y="90" text-anchor="middle" class="label">(start)</text>
+
+  <rect x="320" y="40" width="240" height="80" class="box"/>
+  <text x="440" y="70" text-anchor="middle" class="title">Cadastro</text>
+  <text x="440" y="90" text-anchor="middle" class="label">(forms, comorbidades)</text>
+
+  <rect x="620" y="40" width="220" height="80" class="box"/>
+  <text x="730" y="70" text-anchor="middle" class="title">Dashboard</text>
+  <text x="730" y="90" text-anchor="middle" class="label">(IMC, gráficos, planos)</text>
+
+  <rect x="200" y="180" width="220" height="80" class="box"/>
+  <text x="310" y="210" text-anchor="middle" class="title">Dieta</text>
+  <text x="310" y="230" text-anchor="middle" class="label">(cardápios, receitas)</text>
+
+  <rect x="480" y="180" width="220" height="80" class="box"/>
+  <text x="590" y="210" text-anchor="middle" class="title">Exercícios</text>
+  <text x="590" y="230" text-anchor="middle" class="label">(planos semanais)</text>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M240,80 L320,80" />
+  <path class="arrow" d="M560,80 L620,80" />
+  <path class="arrow" d="M700,120 L700,180" />
+  <path class="arrow" d="M300,120 L300,180" />
+
+  <!-- AsyncStorage keys -->
+  <text x="120" y="320" class="label">AsyncStorage keys:</text>
+  <text x="120" y="340" class="label">- user</text>
+  <text x="120" y="360" class="label">- pesagens</text>
+  <text x="120" y="380" class="label">- selectedComorbidades / selectedRecipe</text>
+
+  <!-- Notes -->
+  <text x="460" y="320" class="label">Navigation: app uses `screen` state in `App.tsx`</text>
+  <text x="460" y="340" class="label">Recommendation merge: union of per-comorbidity plans</text>
+</svg>
