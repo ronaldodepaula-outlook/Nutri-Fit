@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Nutri&Fit",
-    "slug": "Nutri&Fit",
+    "name": "Nutri & Fit",
+    "slug": "nutri-fit",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ronaldodepaulasurf1.nutrifit"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,14 +22,14 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.ronaldodepaulasurf1.Nutri&Fit"
+      "package": "com.ronaldodepaulasurf1.nutrifit"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "be17c6bb-cdf2-4f5e-ae76-87594514e971"
+        "projectId": "efdf9cbe-b4ea-461b-b1c8-1f41b4a23f40"
       }
     }
   }
